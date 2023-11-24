@@ -64,7 +64,8 @@ More information regarding these parameters can be found in the publications men
 
 Before running the code, the following folders need to be created:\
 •	**output:** for saving the data from the 'GA_to_VTK_and_properties_Windows' script.\
-•	**Genetic_Algorithm:** with a subfolder called **GA-2** for storing the data generated in the 'GA_main' script. 
+•	**Genetic_Algorithm:** with a subfolder called **GA-2** for storing the data generated in the 'GA_main' script.\
+•	The **input** folder in this repository additionally needs to be created when running the algorithm for extracted networks. Two examples, paper electrodes for a flow-through and an interdigitated flow field, are provided.
 
 ## Future alterations to the code
 This first version of the code is not optimal in terms of user-friendliness and will therefore be polished further in the future including:\
