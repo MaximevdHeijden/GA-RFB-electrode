@@ -62,6 +62,10 @@ More information regarding these parameters can be found in the publications men
 **If other extracted networks are used, make sure you double check the xyz coordinates, as they affect the boundary conditions and thus the optimization.**\
 **In addition, when using another electrolyte than vanadium, also adjust the end of the algorithm function in the ‘GA-functions script’, as the P_theory must include the full-cell potential of the desired electrolyte (which is 1.26 for the vanadium chemistry).**
 
+Before running the code, the following folders need to be created:\
+•	**output:** for saving the data from the 'GA_to_VTK_and_properties_Windows' script.\
+•	**Genetic_Algorithm:** with a subfolder called **GA-2** for storing the data generated in the 'GA_main' script. 
+
 ## Future alterations to the code
 This first version of the code is not optimal in terms of user-friendliness and will therefore be polished further in the future including:\
 •	The integration of the different chemistry and network versions.\
