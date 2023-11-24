@@ -42,30 +42,30 @@ This script converts the networks generated and saved in ‘GA_main’ to VTK fi
 This script computes the pore size distribution of a network generated and saved in ‘GA_main’.
 
 ## Getting started
-After installing OpenPNM version 2.6.0. and making the required adjustments, the genetic algorithm can be run for the desired operating conditions and network properties, which need to be specified in ‘GA_main’.
-The following properties can be adjusted in ‘GA_main’:
-•	Population size
-•	Number of parents
-•	Number of generations
-•	Mutation probability and range
-•	Initial guesses for the overpotential (should be linked to the applied overpotential, defined in the inputDict)
-•	Network properties including: the network shape, spacing, connectivity, and reference pore and throat diameters for cubic networks, the network shape and number of points for a voronoi network, and the network file for the extracted network. 
-•	Merging and splitting probability and ratio.
-•	The network type: 0 = cubic network, 1 = extracted network, 2 = voronoi network.
-•	Merging and splitting option: 0 = only mutation, 1 = mutation and merging and splitting
-•	Flow field type: 0 = flow-through flow field, 1 = interdigitated flow field.
-•	Reload data: option to continue the optimization at another time.
-•	Chemistry type: this repository contains the chemical information for the vanadium and TEMPO electrolytes.
-•	File name and folder
+After installing OpenPNM version 2.6.0. and making the required adjustments, the genetic algorithm can be run for the desired operating conditions and network properties, which need to be specified in ‘GA_main’.\
+The following properties can be adjusted in ‘GA_main’:\
+•	Population size\
+•	Number of parents\
+•	Number of generations\
+•	Mutation probability and range\
+•	Initial guesses for the overpotential (should be linked to the applied overpotential, defined in the inputDict)\
+•	Network properties including: the network shape, spacing, connectivity, and reference pore and throat diameters for cubic networks, the network shape and number of points for a voronoi network, and the network file for the extracted network.\
+•	Merging and splitting probability and ratio.\
+•	The network type: 0 = cubic network, 1 = extracted network, 2 = voronoi network.\
+•	Merging and splitting option: 0 = only mutation, 1 = mutation and merging and splitting.\
+•	Flow field type: 0 = flow-through flow field, 1 = interdigitated flow field.\
+•	Reload data: option to continue the optimization at another time.\
+•	Chemistry type: this repository contains the chemical information for the vanadium and TEMPO electrolytes.\
+•	File name and folder\
 
-More information regarding these parameters can be found in the publications mentioned under the ‘Cite’ section. **Care must be taken when changing the electrolyte and network types, as different inputDicts and customFunctions must be used. Moreover, the inputDict file used must additionally be changed in the customFunction script! Furthermore, the extracted network must be run at Linux as they don’t work yet on Windows.**
-**If other extracted networks are used, make sure you double check the xyz coordinates, as they affect the boundary conditions and thus the optimization.**
+More information regarding these parameters can be found in the publications mentioned under the ‘Cite’ section. **Care must be taken when changing the electrolyte and network types, as different inputDicts and customFunctions must be used. Moreover, the inputDict file used must additionally be changed in the customFunction script! Furthermore, the extracted network must be run at Linux as they don’t work yet on Windows.**\
+**If other extracted networks are used, make sure you double check the xyz coordinates, as they affect the boundary conditions and thus the optimization.**\
 **In addition, when using another electrolyte than vanadium, also adjust the end of the algorithm function in the ‘GA-functions script’, as the P_theory must include the full-cell potential of the desired electrolyte (which is 1.26 for the vanadium chemistry).**
 
 ## Future alterations to the code
-This first version of the code is not optimal in terms of user-friendliness and will therefore be polished further in the future including:
-•	The integration of the different chemistry and network versions.
-•	The saving of the networks: now all the networks in generations 1-10 and every 100th generation are saved instead of the best network in each generation.
+This first version of the code is not optimal in terms of user-friendliness and will therefore be polished further in the future including:\
+•	The integration of the different chemistry and network versions.\
+•	The saving of the networks: now all the networks in generations 1-10 and every 100th generation are saved instead of the best network in each generation.\
 •	The selection of the mating pool will be changed as now only new individuals (after crossover) are created. In the newer version, the best-performing network in the previous generation (without crossover) will be used in the next generation as well. 
 
 ## Contribution
