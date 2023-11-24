@@ -56,7 +56,7 @@ The following properties can be adjusted in ‘GA_main’:\
 •	Flow field type: 0 = flow-through flow field, 1 = interdigitated flow field.\
 •	Reload data: option to continue the optimization at another time.\
 •	Chemistry type: this repository contains the chemical information for the vanadium and TEMPO electrolytes.\
-•	File name and folder\
+•	File name and folder.
 
 More information regarding these parameters can be found in the publications mentioned under the ‘Cite’ section. **Care must be taken when changing the electrolyte and network types, as different inputDicts and customFunctions must be used. Moreover, the inputDict file used must additionally be changed in the customFunction script! Furthermore, the extracted network must be run at Linux as they don’t work yet on Windows.**\
 **If other extracted networks are used, make sure you double check the xyz coordinates, as they affect the boundary conditions and thus the optimization.**\
