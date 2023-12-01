@@ -85,7 +85,7 @@ The code has been developed and described in the following two publications. Ple
       author = {Maxime van der Heijden and Gabor Szendrei and Victor de Haas and Antoni Forner-Cuenca},
       journal = {ChemRxiv},
       year = {2023},
-      doi = {},
+      doi = {10.26434/chemrxiv-2023-nzr36},
 }
 @article{gorp2023bottomup,
       title = {Bottom-up design of porous electrodes by combining a genetic algorithm and a pore network model},
