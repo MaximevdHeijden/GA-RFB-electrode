@@ -13,7 +13,7 @@ To obtain the .png figures, the following procedure can be followed:\
 •	Adjust camera:\
 The settings that were used for the visualization of the cubic network are shown below:\
 <img src="/Image processing/camera.png" alt="color photo ftl" width="30%" height="auto" />
-* **TIP**: use Paraview to analyze the boundaries of the network (inlet, outlet, current collector, and membrane with left, right, bottom etc.), which can be checked easily with a preset camera orientation.*\
+**TIP**: use Paraview to analyze the boundaries of the network (inlet, outlet, current collector, and membrane with left, right, bottom etc.), which can be checked easily with a preset camera orientation.\
 •	Throat visualization:\
 After applying the loaded …_velocity.vtp file, the ‘Coloring’ can be changed to for example ‘Solid Color’ with (R, G, B) (150, 150, 150) which was used for the cubic networks, or (200, 200, 200) which was used for the extracted networks.\
 The throat visualization was further changed by changing the Opacity (for example to 0.5) and the Line Width (‘Toggle advanced properties’ wheel in ‘Properties’, set for example to 2). \
