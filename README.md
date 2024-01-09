@@ -5,7 +5,7 @@ In our developed genetic algorithm (GA), optimized porous electrodes are compute
 GA-RFB-electrode is an open-source code written in Python using the open-source software OpenPNM.
 
 ## Installation
-The scripts and functions in this folder use OpenPNM version 2.6.0. which can be installed using [OpenPNM documentation](https://openpnm.org/installation.html). To change the current version to OpenPNM version 2.6.0., [Gitkraken](https://www.gitkraken.com/) can be used. Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “READ Me – OpenPNM changes” file.
+The scripts and functions in this folder use OpenPNM version 2.6.0. which can be installed using [OpenPNM documentation](https://openpnm.org/installation.html). To change the current version to OpenPNM version 2.6.0., [Gitkraken](https://www.gitkraken.com/) can be used. Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “READ Me – OpenPNM changes” file. For the installation of OpenPNM from scratch checkout the following [README](https://github.com/MaximevdHeijden/PNM-RFB-electrode) file.
 
 ## Documentation
 This repository contains several scripts that will be used when running the code or for post-processing, including:
@@ -38,7 +38,7 @@ Four versions exist of this code:
 4.	**inputDictTEMPO_FH23:** This script is suitable for tomographic extracted networks and runs the algorithm for the TEMPO chemistry (the xyz coordinates in the provided extracted networks are different than for the cubic networks, affecting the boundary conditions).
 
 **GA_to_VTK_and_properties_Windows:**
-This script converts the networks generated and saved in ‘GA_main’ to VTK files which can be visualized in [Paraview](https://www.paraview.org/). Moreover, the polarization plot will be obtained for a specified number of applied potentials, which can also be obtained using a network-in-series approach to mimic a larger electrode size.
+This script converts the networks generated and saved in ‘GA_main’ to VTK files which can be visualized in [Paraview](https://www.paraview.org/) (more information can be found in the following [BLOG](https://maximevdheijden.github.io/2023/12/15/VisualizationParaview/)). Moreover, the polarization plot will be obtained for a specified number of applied potentials, which can also be obtained using a network-in-series approach to mimic a larger electrode size.
 
 **Network_properties_Windows:**
 This script computes the pore size distribution of a network generated and saved in ‘GA_main’.
@@ -70,18 +70,28 @@ Before running the code, the following folders need to be created:\
 •	The **input** folder in this repository additionally needs to be created when running the algorithm for extracted networks. Two examples, paper electrodes for a flow-through and an interdigitated flow field, are provided.
 
 ## Future alterations to the code
-This first version of the code is not optimal in terms of user-friendliness and will therefore be polished further in the future including:\
+This first version of the code is not optimal in terms of user-friendliness and should therefore be polished further in the future including:\
 •	The integration of the different chemistry and network versions.\
 •	The saving of the networks: now all the networks in generations 1-10 and every 100th generation are saved instead of the best network in each generation.\
 •	The selection of the mating pool will be changed as now only new individuals (after crossover) are created. In the newer version, the best-performing network in the previous generation (without crossover) will be used in the next generation as well. 
 
+## Future research directions
+The presented GA is a proof-of-concept and should be further developed in future work. Possible extensions or improvements of the modeling framework are provided in the following [BLOG](https://maximevdheijden.github.io/2023/11/22/GAprospects/).
+
 ## Contribution
-GA-RFB-electrode is developed using a wide range of open-source tools, including OpenPNM. The code has initially been developed as part of a PhD research project, but further contributions are very welcome.  
+GA-RFB-electrode is developed using a wide range of open-source tools, including OpenPNM. The code has initially been developed as part of a PhD research project and two master projects, but further contributions are very welcome.  
 
 ## Publications and citations
-The code has been developed and described in the following two publications. Please cite them when referring to the algorithm: 
+The code has been developed and described in the following two publications and PhD thesis. Please cite them when referring to the algorithm: 
 
 ```bash
+@phdthesis{heijden2023engineering,
+      title = {Engineering porous electrodes for redox flow batteries - modeling, diagnostics, and manufacturing},
+      author = {Maxime van der Heijden},
+      isbn = {978-90-386-5878-0},
+      year = {2023},
+      publisher = {Eindhoven University of Technology},
+}
 @article{heijden2023versatile,
       title = {A versatile optimization framework for porous electrode design},
       author = {Maxime van der Heijden and Gabor Szendrei and Victor de Haas and Antoni Forner-Cuenca},
@@ -101,7 +111,7 @@ The code has been developed and described in the following two publications. Ple
 }
 ```
 
-For referring to the pore network model, please cite the following publications: 
+For referring to the [pore network model](https://github.com/MaximevdHeijden/PNM-RFB-electrode), please cite the following publications: 
 
 ```bash
 @article{heijden2022assessing,
