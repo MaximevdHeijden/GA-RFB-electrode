@@ -1,6 +1,8 @@
 # Genetic Algorithm scripts
 ## About
-This repository contains a novel approach for the optimization of porous electrode microstructures from the bottom-up is presented that couples a genetic algorithm with a validated [pore network model](https://github.com/MaximevdHeijden/PNM-RFB-electrode). GA-RFB-electrode is an open-source code written in Python using the open-source software OpenPNM.
+This repository contains a novel approach for the optimization of porous electrode microstructures from the bottom-up is presented that couples a genetic algorithm with a validated [pore network model](https://github.com/MaximevdHeijden/PNM-RFB-electrode).\
+In our developed genetic algorithm (GA), optimized porous electrodes are computed from the bottom-up by natural selection of the fittest structures driven by the [theory of evolution](https://maximevdheijden.github.io/2023/11/23/Computationaloptimizationstrategies/). A GA has a high degree of evolutionary freedom and can easily be adapted and expanded depending on the operating conditions (potential, flow rate), network properties (artificial, extracted), system configuration (flow field, electrolyte), and desired optimization functions (mutation, migration). The framework was built to speed up and guide the design of electrodes for electrochemical applications, with a focus on redox flow batteries.\
+GA-RFB-electrode is an open-source code written in Python using the open-source software OpenPNM.
 
 ## Installation
 The scripts and functions in this folder use OpenPNM version 2.6.0. which can be installed using [OpenPNM documentation](https://openpnm.org/installation.html). To change the current version to OpenPNM version 2.6.0., [Gitkraken](https://www.gitkraken.com/) can be used. Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “READ Me – OpenPNM changes” file.
