@@ -5,7 +5,50 @@ In our developed genetic algorithm (GA), optimized porous electrodes are compute
 GA-RFB-electrode is an open-source code written in Python using the open-source software OpenPNM.
 
 ## Installation
-The scripts and functions in this folder use OpenPNM version 2.6.0. which can be installed using [OpenPNM documentation](https://openpnm.org/installation.html). To change the current version to OpenPNM version 2.6.0., [Gitkraken](https://www.gitkraken.com/) can be used. Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “READ Me – OpenPNM changes” file. For the installation of OpenPNM from scratch checkout the following [README](https://github.com/MaximevdHeijden/PNM-RFB-electrode) file.
+The scripts and functions in this folder use OpenPNM version 2.6.0. which can be installed using [OpenPNM documentation](https://openpnm.org/installation.html). Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “READ Me – OpenPNM changes” file. For the installation of OpenPNM from scratch follow the steps below:
+
+1.	Download [Anaconda](https://www.anaconda.com/download/) and follow the installment procedure. The open-source Anaconda Distribution is the easiest way to perform Python/R data science and machine learning on Linux, Windows, and Mac OS X. Python is used as the programming language in this project and Spyder can be used as editor.
+
+2.    Check pip installation (pip is the package manager of python) and install pipenv. First, open 'Anaconda prompt' via the Windows start menu. Check if pip is installed using:
+
+      ```
+      python -m pip --version
+      ```
+
+      If pip is installed, install pipenv using:
+
+      ```
+      python -m pip install --user pipenv
+      ```
+
+      You can get a warning that the installed packages are not on your PATH. Copy this path, go to your windows start menu and type in “Edit the system environment variables”, select “environment variables”, click on Path and select “Edit”. Then click “new” and paste the path you just copied.
+
+3.    Install the latest version of [OpenPNM](https://openpnm.org/installation.html), following the “hard (but correct way)” will allow you to install the developing code:\
+      •	First make a repository (folder) in which you want to save the code and copy the directory adress.\
+      •	Open Anaconda Prompt and go to the folder by using the "cd" command.\
+      •	Clone the repo via the command:
+               
+            git clone https://github.com/PMEAL/OpenPNM
+                  
+      •	Enter the root folder of openPNM by using the "cd OpenPNM" command.\
+      •	Enter the following command and note the space between the dot and e is not a typo:
+            
+            pip install --no-deps -e .
+            
+      •	Enter the following commands to install the openpnm dependencies:
+       
+            conda install --file requirements/conda.txt -c conda-forge
+            pip install -e .
+
+      •	Switch to version 2.6.0 of OpenPNM using:
+
+            git checkout v2.6.0
+
+5.    You need to install some dependencies using for example pip by entering the following command in AnacondaPrompt:
+ 
+            pip install -r requirements.txt
+
+6.    Now the codes should work.
 
 ## Documentation
 This repository contains several scripts that will be used when running the code or for post-processing, including:
