@@ -999,26 +999,7 @@ surface = net_c.find_neighbor_throats(pores=net_c.pores('surface'))
 op.topotools.trim(network=net_c, throats=surface)
 op.topotools.trim(network=net_c, pores=net_c.pores('surface'))
 
-op.io.VTK.save(network=net_c, phases=catholyte, filename='.\\Genetic_Algorithm\\' + electrode_name[filename] + '_velocity')
-
-# =================================================================================
-# Save the absolute velocity to be able to plot the absolute velocity in the throats in paraview:     
-Neigbor_array = net_c['throat.conns']
-Pore_0 = net_c['throat.conns'][:,0]
-Pore_1 = net_c['throat.conns'][:,1]
-Pres_pore_0 = catholyte['pore.pressure'][net_c['throat.conns'][:,0]]
-Pres_pore_1 = catholyte['pore.pressure'][net_c['throat.conns'][:,1]]
-Delta_p = np.abs(Pres_pore_0 - Pres_pore_1)
-g_h = catholyte['throat.hydraulic_conductance']
-t_a = net_c['throat.area']
-catholyte['throat.absolute_flowrate'] = Delta_p*g_h
-catholyte['throat.absolute_velocity'] = catholyte['throat.absolute_flowrate'] / t_a
-
-surface = net_c.find_neighbor_throats(pores=net_c.pores('surface'))
-op.topotools.trim(network=net_c, throats=surface)
-op.topotools.trim(network=net_c, pores=net_c.pores('surface'))
-
-op.io.VTK.save(network=net_c, phases=catholyte, filename='.\\Genetic_Algorithm\\' + electrode_name[filename] + '_velocity')
+op.io.VTK.save(network=net_c, phases=catholyte, filename= '.\\output\\' + Type + electrode_name[filename] + '\\' + electrode_name[filename] + '_velocity')
 
 # =================================================================================
 # Save the concentration field and pore size distributions:
@@ -1083,4 +1064,4 @@ for column_num in range(0, len(output_variables)): # column_num represents the v
     # ws.cell(row=4, column=column_num+1).value = None
     for row_num in range(0, len(output_variables[column_num])): # row_num represents the ith entry within the variable array
         ws.cell(row = row_num + 3, column = column_num + 1).value = output_variables[column_num][row_num] # row_num + 5 to convert to Origin format 
-wb.save(filename = '.\\output\\' + electrode_name[filename] + '_psd.xlsx')
+wb.save(filename = '.\\output\\' + Type + electrode_name[filename] + '\\' + electrode_name[filename] + '_psd.xlsx')

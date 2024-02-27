@@ -12,6 +12,7 @@ project_1 = op.io.PNM.load_project(filename=path+name+'.pnm')
 net = project_1.network
 project_1 = op.io.PNM.load_project(filename=path+name+'.pnm')
 net = project_1.network
+Type = 'GA\\'
 
 def find_connectivity(net):
     r''' find_connectivity finds the connectivity of every pore in a network.
@@ -317,6 +318,4 @@ for column_num in range(0, len(output_variables)): # column_num represents the v
     for row_num in range(0, len(output_variables[column_num])): # row_num represents the ith entry within the variable array
         ws.cell(row = row_num + 4, column = column_num + 4).value = output_variables[column_num][row_num] # row_num + 5 to convert to Origin format 
 
-wb.save(filename = '.\\output\\' + 'PSDcounts_' + name + '_network_properties.xlsx')
-
-print(f'information saved to .\\output\\{name}_network_properties.xlsx')
+wb.save(filename = '.\\output\\' + Type + name + '\\' + 'PSDcounts_' + name + '_network_properties.xlsx')

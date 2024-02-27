@@ -1251,7 +1251,7 @@ def add_geometry_models(net, geo, throat_condition, spacing, Extracted):
         geo[i].add_model(propname='throat.cross_sectional_area', model=op.models.geometry.throat_cross_sectional_area.cylinder, throat_diameter='throat.diameter')
         geo[i].add_model(propname='throat.conduit_lengths', model=op.models.geometry.throat_length.conduit_lengths, throat_endpoints='throat.endpoints', throat_length='throat.length')
         geo[i].add_model(propname='throat.area', model=op.models.geometry.throat_area.cylinder, throat_diameter='throat.diameter')       
-        geo[i].add_model(propname='pore.surface_area', model=op.models.geometry.pore_surface_area.sphere, pore_diameter='pore.diameter',throat_cross_sectional_area='throat.cross_sectional_area', throat_surface_area='throat.surface_area')
+        geo[i].add_model(propname='pore.surface_area', model=op.models.geometry.pore_surface_area.sphere, pore_diameter='pore.diameter',throat_cross_sectional_area='throat.cross_sectional_area')
          
         if Extracted == 0:
             geo[i]['pore.diameter'][net[i].pores('surface')] = 1/50 * spacing
@@ -1285,7 +1285,7 @@ def add_geometry_models_ref(net, geo, throat_condition, spacing, Extracted):
     geo.add_model(propname='throat.cross_sectional_area', model=op.models.geometry.throat_cross_sectional_area.cylinder, throat_diameter='throat.diameter')
     geo.add_model(propname='throat.conduit_lengths', model=op.models.geometry.throat_length.conduit_lengths, throat_endpoints='throat.endpoints', throat_length='throat.length')
     geo.add_model(propname='throat.area', model=op.models.geometry.throat_area.cylinder, throat_diameter='throat.diameter')       
-    geo.add_model(propname='pore.surface_area', model=op.models.geometry.pore_surface_area.sphere, pore_diameter='pore.diameter',throat_cross_sectional_area='throat.cross_sectional_area', throat_surface_area='throat.surface_area')
+    geo.add_model(propname='pore.surface_area', model=op.models.geometry.pore_surface_area.sphere, pore_diameter='pore.diameter',throat_cross_sectional_area='throat.cross_sectional_area')
      
     if Extracted == 0:
         geo['pore.diameter'][net.pores('surface')] = 1/50 * spacing
