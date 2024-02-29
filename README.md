@@ -24,7 +24,7 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
       You can get a warning that the installed packages are not on your PATH. Copy this path, go to your windows start menu and type in “Edit the system environment variables”, select “environment variables”, click on Path and select “Edit”. Then click “new” and paste the path you just copied.
 
 3.    Install the latest version of [OpenPNM](https://openpnm.org/installation.html), following the “hard (but correct way)” will allow you to install the developing code:\
-      •	First make a repository (folder) in which you want to save the code and copy the directory adress.\
+      •	First make a repository (folder) in which you want to save the code and copy the directory address.\
       •	Open Anaconda Prompt and go to the folder by using the "cd" command.\
       •	Clone the repo via the command:
                
