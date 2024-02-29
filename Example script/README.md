@@ -7,7 +7,7 @@ From the "GA_to_VTK_and_properties_Windows" script using the output "..._velocit
 <img src="output/Example_1.png" alt="color photo ftl" width="50%" height="auto" />\
 *Figure 1: The geometrical evolution of the reference system. The networks of the first and final (1000th) generations are shown, displaying the: (a) pore diameter evolution, (b) the throat absolute velocity, (c) the pore concentration, and (d) the absolute pore current. With the flow in the y-direction and the thickness in the z-direction with the membrane facing to the top.*
 
-Using the ouput ".xlsx" file obtained from "GA_main_Windows", the fitness values, electrical power, and pumping power can be plotted over the generations. The polarization curves can be obtained from the ".xlsx" output file of "GA_to_VTK_and_properties_Windows".\
+Using the output ".xlsx" file obtained from "GA_main_Windows", the fitness values, electrical power, and pumping power can be plotted over the generations. The polarization curves can be obtained from the ".xlsx" output file of "GA_to_VTK_and_properties_Windows".\
 <img src="output/Example_2.png" alt="color photo ftl" width="50%" height="auto" />\
 *Figure 2: The results of the genetic algorithm optimized for the VO2+/VO2+ electrolyte, evaluated for the reference system (cubic network with mutation and a flow-through flow field), with: (a) the structure evolution over 1000 generations with the flow in the y-direction and the thickness in the z-direction with the membrane facing to the top, (b) the maximum fitness evolution, (c) the maximum electrical power and pumping power evolution, and (d) the polarization curve for the first and last generation.*
 
