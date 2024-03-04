@@ -44,8 +44,8 @@ def algorithm(net_c, net_a, eta_c, eta_a, generation, Extracted, FF, ReloadData,
     
     # Assign the labels 'membrane', 'current collector' 'flow inlet' and 'flow outlet' to the correct boundary pores:
     if FF == 0:
-        cf.assign_boundary_poresFF(net_c, W_dim, L_dim, Extracted)
-        cf.assign_boundary_poresFF(net_a, W_dim, L_dim, Extracted)    
+        cf.assign_boundary_poresFF(net_c, W_dim, L_dim)
+        cf.assign_boundary_poresFF(net_a, W_dim, L_dim)    
     elif FF == 1:
         cf.assign_boundary_poresIDFF(net_c, W_dim, L_dim, H_dim, H_c, H_c_min, L_c_min, W_c_min, L_c, W_c, Extracted)
         cf.assign_boundary_poresIDFF(net_a, W_dim, L_dim, H_dim, H_a, H_a_min, L_a_min, W_a_min, L_a, W_a, Extracted) 
