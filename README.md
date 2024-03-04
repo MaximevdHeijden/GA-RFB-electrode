@@ -45,13 +45,13 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
 
             git checkout v2.6.0
 
-5.    You need to install some dependencies, which can be found in this repository and need to be copied in your OpenPNM folder. The dependencies can be installed using for example pip by entering the following command in AnacondaPrompt:
+4.    You need to install some dependencies, which can be found in this repository and need to be copied in your OpenPNM folder. The dependencies can be installed using for example pip by entering the following command in AnacondaPrompt:
  
             pip install -r requirements.txt
 
-6.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “ READ ME – OpePNM changes” file.
+5.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “ READ ME – OpePNM changes” file.
 
-7.    Now the codes should work.
+6.    Now the codes should work.
 
 ## Documentation
 This repository contains several scripts that will be used when running the code or for post-processing, including:
