@@ -45,7 +45,7 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
 
             git checkout v2.6.0
 
-5.    You need to install some dependencies using for example pip by entering the following command in AnacondaPrompt:
+5.    You need to install some dependencies, which can be found in this repository and need to be copied in your OpenPNM folder. The dependencies can be installed using for example pip by entering the following command in AnacondaPrompt:
  
             pip install -r requirements.txt
 
