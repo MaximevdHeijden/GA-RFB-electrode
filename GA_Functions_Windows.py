@@ -291,7 +291,7 @@ def algorithm(net_c, net_a, eta_c, eta_a, generation, Extracted, FF, ReloadData,
             eta0_a = eta_a.mean()                           # Initial guess for overpotential
             eta0_c = eta_c.mean()  
     elif ReloadData == 1:
-        if generation == reload
+        if generation == reload:
             eta0_a = 0
             eta0_c = 0
         else:
