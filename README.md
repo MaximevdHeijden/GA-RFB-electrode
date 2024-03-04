@@ -5,7 +5,7 @@ In our developed genetic algorithm (GA), optimized porous electrodes are compute
 GA-RFB-electrode is an open-source code written in Python using the open-source software OpenPNM.
 
 ## Installation
-The scripts and functions in this folder use OpenPNM version 2.6.0. which can be installed using [OpenPNM documentation](https://openpnm.org/installation.html). Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “READ Me – OpenPNM changes” file. For the installation of OpenPNM from scratch follow the steps below:
+The scripts and functions in this folder use OpenPNM version 2.6.0. which can be installed using [OpenPNM documentation](https://openpnm.org/installation.html). Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “READ ME – OpenPNM changes” file. For the installation of OpenPNM from scratch follow the steps below:
 
 1.	Download [Anaconda](https://www.anaconda.com/download/) and follow the installment procedure. The open-source Anaconda Distribution is the easiest way to perform Python/R data science and machine learning on Linux, Windows, and Mac OS X. Python is used as the programming language in this project and Spyder can be used as editor.
 
@@ -24,7 +24,8 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
       You can get a warning that the installed packages are not on your PATH. Copy this path, go to your windows start menu and type in “Edit the system environment variables”, select “environment variables”, click on Path and select “Edit”. Then click “new” and paste the path you just copied.
 
 3.    Install the latest version of [OpenPNM](https://openpnm.org/installation.html), following the “hard (but correct way)” will allow you to install the developing code:\
-      •	First make a repository (folder) in which you want to save the code and copy the directory address.\
+      •     First install git if you dont have it installed yet from their [website](https://git-scm.com/downloads) and restart the Anaconda prompt.\
+      •     Make a repository (folder) in which you want to save the code and copy the directory address.\
       •	Open Anaconda Prompt and go to the folder by using the "cd" command.\
       •	Clone the repo via the command:
                
@@ -48,7 +49,9 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
  
             pip install -r requirements.txt
 
-6.    Now the codes should work.
+6.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “ READ ME – OpePNM changes” file.\
+
+7.    Now the codes should work.
 
 ## Documentation
 This repository contains several scripts that will be used when running the code or for post-processing, including:
