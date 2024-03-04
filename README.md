@@ -49,7 +49,7 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
  
             pip install -r requirements.txt
 
-6.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “ READ ME – OpePNM changes” file.\
+6.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “ READ ME – OpePNM changes” file.
 
 7.    Now the codes should work.
 
