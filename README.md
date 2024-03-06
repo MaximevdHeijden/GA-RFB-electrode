@@ -52,12 +52,18 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
  
             pip install -r requirements.txt
 
-6.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “openpnm” folder.
+6.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “OpenPNM” folder.
 
 7.    Now the codes should work.
 
 ## Dockerfile installation
-As an alternative you can run the Dockerfile to run the code. The Dockerfile now runs the GA_main_Windows script.
+As an alternative you can run the Dockerfile to run the code, which runs the GA_main_Windows script, by entering the following commands:
+
+```
+docker build -t GA-RFB-electrode . 
+
+docker run -it GA-RFB-electrode
+```
 
 ## Documentation
 This repository contains several scripts that will be used when running the code or for post-processing, including:

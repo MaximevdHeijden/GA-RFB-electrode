@@ -1,0 +1,1 @@
+The example scipt will save the data in this folder.
