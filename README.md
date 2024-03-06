@@ -31,27 +31,33 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
                
             git clone https://github.com/PMEAL/OpenPNM
                   
-      •	Enter the root folder of openPNM by using the "cd OpenPNM" command.\
-      •	Enter the following command and note the space between the dot and e is not a typo:
-            
-            pip install --no-deps -e .
-            
-      •	Enter the following commands to install the openpnm dependencies:
-       
-            conda install --file requirements/conda.txt -c conda-forge
-            pip install -e .
+      •	Enter the root folder of openPNM by using the command:
 
-      •	Switch to version 2.6.0 of OpenPNM using:
+            cd OpenPNM
+  
+        •	Switch to version 2.6.0 of OpenPNM using:
 
             git checkout v2.6.0
 
-4.    You need to install some dependencies, which can be found in this repository and need to be copied in your OpenPNM folder. The dependencies can be installed using for example pip by entering the following command in AnacondaPrompt:
+      •	Enter the following commands to install the openpnm dependencies:
+            
+            pip install -r requirements/pip_requirements.txt
+            
+      •	Enter the following command and note the space between the dot and e is not a typo:
+       
+            pip install -e .
+
+
+5.    You need to install some dependencies, which can be found in this repository and need to be copied in your OpenPNM folder. The dependencies can be installed using for example pip by entering the following command in AnacondaPrompt:
  
             pip install -r requirements.txt
 
-5.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “ READ ME – OpePNM changes” file.
+6.    Before running the code, minor adjustments need to be made to the OpenPNM documentation, which can be found in the “openpnm” folder.
 
-6.    Now the codes should work.
+7.    Now the codes should work.
+
+## Dockerfile installation
+As an alternative you can run the Dockerfile to run the code. The Dockerfile now runs the GA_main_Windows script.
 
 ## Documentation
 This repository contains several scripts that will be used when running the code or for post-processing, including:
