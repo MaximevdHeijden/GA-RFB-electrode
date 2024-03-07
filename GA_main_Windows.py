@@ -74,7 +74,7 @@ else:
     reload = 0
 
 name = 'Reference'    
-folder = '.\\GA-2\\' + name
+folder = 'GA-2\\' + name
 
 # Start of the algorithm:
 ws = op.Workspace()
