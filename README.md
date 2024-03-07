@@ -60,9 +60,9 @@ The scripts and functions in this folder use OpenPNM version 2.6.0. which can be
 As an alternative you can run the Dockerfile to run the code, which runs the GA_main_Windows script, by entering the following commands:
 
 ```
-docker build -t GA-RFB-electrode . 
+docker build -t ga-rfb-electrode . 
 
-docker run -it GA-RFB-electrode
+docker run -it ga-rfb-electrode
 ```
 
 ## Documentation
